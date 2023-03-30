@@ -1,0 +1,150 @@
+body  {
+    margin: 0;
+    padding: 0;
+    font: normal 13px arial, helvetica, sans-serif;
+    background: #000;
+    }
+   
+  #menu {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    }
+   
+  #menu ul  {
+    list-style: none;
+    margin: 0;
+    }
+   
+  #menu ul li {
+    margin: 0;
+    float: left;
+    }
+   
+  #menu ul li a {
+    margin:0 2px;
+    width: 138px;
+    font-weight:bold;
+    font-size:1.5em;
+    text-align: center;
+    line-height: 44px;
+    display:block;
+    text-decoration: none
+    }
+   
+  #menu ul li a:hover {
+    color:#000;
+    }
+   
+  #item-uno a {
+    border-bottom:5px solid #f00;
+    color: #f00
+    }
+   
+  #item-dos a {
+    border-bottom:5px solid #f80;
+    color: #f80;
+    }
+   
+  #item-tres a {
+    border-bottom:5px solid #ff0;
+    color: #ff0;
+    }
+   
+  #item-cuatro a {
+    border-bottom:5px solid #8f0;
+    color: #8f0;
+    }
+   
+  #item-cinco a {
+    border-bottom:5px solid #0ff;
+    color: #0ff;
+    }
+   
+  #item-seis a {
+    border-bottom:5px solid #08f;
+    color: #08f;
+    }
+   
+  #item-uno a:hover {
+    background:#f00;
+    }
+   
+  #item-dos a:hover {
+    background:#f80;
+    }
+   
+  #item-tres a:hover {
+    background:#ff0;
+    }
+   
+  #item-cuatro a:hover {
+    background:#8f0;
+    }
+   
+  #item-cinco a:hover {
+    background:#0ff;
+    }
+   
+  #item-seis a:hover {
+    background:#08f;
+    }
+
+/* Contenedor general y reset de margin y padding */
+.expandir * {
+    margin: 0;
+    padding: 0;
+    }
+    .expandir {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:normal;
+    margin:20px auto 30px;
+    height:80px;
+    width:530px;
+    }
+    /* Las imágenes irán en forma de lista */
+    .expandir ul {
+    padding-top:10px;
+    margin-left:10px;
+    }
+    /* Se hacen flotar los elementos para que queden en línea y se elimina el estilo que podría haber predefinido para listas */
+    .expandir ul li {
+    float:left;
+    list-style-type:none;
+    }
+    /* Anulamos estilo predifinido para enlaces en listas */
+    .expandir ul li a {
+    text-decoration:none;
+    }
+    /* Estilo de cada imagen en situación inicial y transición suave */
+    .expandir ul li a img {
+    width:32px; /* Ancho inicial imagénes. 50% real */
+    height:32px; /* Alto inicial imagénes. 50% real */
+    border:none;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    }
+    /* El texto que acompaña a las imágenes no se ve inicialmente */
+    .expandir ul li a span {
+    display:none;
+    }
+    /* Mostramos el texto al hacer hover */
+    .expandir ul li:hover a span {
+    display:block;
+    font-size:14px;
+    text-align:center;
+    color:#000;
+    }
+    /* Agrandamos la imagen al hacer hover */
+    .expandir ul li:hover a img {
+    width:64px;
+    height:64px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    }
